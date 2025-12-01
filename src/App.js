@@ -10,7 +10,7 @@ function App() {
   const [editingAnime, setEditingAnime] =useState(null);
   const [cargando,setCargando] = useState(false);
   const [modalAbierto, setModalAbierto] = useState(false);
-  const API_URL= "http://localhost:8000/api";
+  const API_URL= "https://laravel-1-production.up.railway.app";
 
   useEffect(() => {
     cargarDatos();
