@@ -1,38 +1,36 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body{
+  background: radial-gradient(circle at top center, #2C2E33 0%, #1A1B1E 100%);
+  background-attachment: fixed; 
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #C1C2C5; 
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.main-title{
+  color: #fff;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  letter-spacing: 1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.anime-card{
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  background-color: #25262B !important;
+}
+
+.anime-card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important; 
+  border-color: #339AF0 !important; 
+}
+
+.btn-agregar{
+  box-shadow: 0 4px 15px rgba(34, 139, 230, 0.4);
+  transition: transform 0.2s;
+}
+
+.btn-agregar:hover{
+  transform: scale(1.05);
 }
